@@ -167,7 +167,7 @@ bar {
 for_window [class="^.*"] border pixel 0
 
 # default gap sizes
-gaps inner 50
+gaps inner 20
 gaps outer 0
 
 # scratchpad, used to simulate minimization
