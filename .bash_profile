@@ -6,6 +6,7 @@ export XGD_CONFIG_HOME=~/.config
 export XGD_DATA_HOME=~/.local/share
 export XDG_DOCUMENTS_DIR=~/documents
 
+export TERMINAL=/bin/termite
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
