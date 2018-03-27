@@ -107,6 +107,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'airblade/vim-gitgutter'
     Plug 'chriskempson/base16-vim'
     Plug 'ctrlpvim/ctrlp.vim'
+    Plug 'rking/ag.vim'
 call plug#end()
 
 set backupdir=~/.vimtmp,.
