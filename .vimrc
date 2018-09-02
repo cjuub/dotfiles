@@ -131,6 +131,8 @@ set clipboard=unnamedplus
 
 set colorcolumn=100
 
+set relativenumber
+
 " YouCompleteMe
 let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 let g:ycm_path_to_python_interpreter = '/usr/bin/python2'
