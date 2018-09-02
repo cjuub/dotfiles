@@ -13,6 +13,9 @@ export TERMINAL=/bin/termite
 # MPD daemon start (if no other user instance exists)
 [ ! -s ~/.config/mpd/pid ] && mpd ~/.config/mpd/mpd.conf
 
+# Set up automatic sync for keepass file
+~/documents/private/keepass_sync.sh &
+
 if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
   exec startx
 fi
