@@ -176,3 +176,4 @@ bindsym $mod+minus scratchpad show
 
 # swap keyboard layout between us/sv 
 bindsym $mod+Shift+m exec ~/.config/i3/swap_us_sv.sh
+bindsym $mod+Shift+n exec ~/.config/i3/set_us_int.sh
