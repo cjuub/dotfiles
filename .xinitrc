@@ -42,8 +42,8 @@ compton -b
 # restore background image
 ~/.fehbg &
 
-# start redshift
-redshift &
+# Start redshift
+redshift-gtk -l 59.262038:15.241937 &
 
 # enable keybindings
 xbindkeys
