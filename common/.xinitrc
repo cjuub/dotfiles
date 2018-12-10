@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
@@ -17,7 +17,6 @@ fi
 
 if [ -f "$userresources" ]; then
     xrdb -merge "$userresources"
-
 fi
 
 if [ -f "$usermodmap" ]; then
@@ -42,7 +41,7 @@ compton -b
 # restore background image
 ~/.fehbg &
 
-# Start redshift
+# start redshift
 redshift-gtk -l 59.262038:15.241937 &
 
 # enable keybindings
@@ -55,4 +54,6 @@ screencloud &
 xset -dpms
 xset s off
 
-exec i3
+# set us international with caps as super keymap
+setxkbmap us -variant altgr-intl -option caps:super
+

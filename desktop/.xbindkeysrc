@@ -1,0 +1,16 @@
+# increase volume
+"amixer -q sset Master 2%+"
+    XF86AudioRaiseVolume
+
+# decrease volume
+"amixer -q sset Master 2%-"
+    XF86AudioLowerVolume
+
+# mute audio
+"amixer sset Master toggle"
+    XF86AudioMute
+
+# toggle music play/pause
+"mpc -q toggle"
+    XF86Calculator
+
