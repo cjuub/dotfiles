@@ -10,6 +10,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # vim mode
 bindkey -v
+bindkey '^R' history-incremental-search-backward
 
 setopt autocd extendedglob nomatch
 unsetopt appendhistory notify beep
