@@ -7,6 +7,6 @@
    XF86MonBrightnessDown
 
 # toggle touchpad
-"/home/cjuub/.toggle_touchpad.sh"
+"sudo /home/cjuub/.toggle_touchpad.sh"
    XF86Search
 
