@@ -1,0 +1,8 @@
+[Unit]
+Description=Disable NVIDIA card on boot.
+
+[Service]
+ExecStart=/home/cjuub/.disable_nvidia.sh
+
+[Install]
+WantedBy=multi-user.target

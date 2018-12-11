@@ -1,0 +1,8 @@
+[Unit]
+After=suspend.target
+
+[Service]
+ExecStart=modprobe -r hid_multitouch
+
+[Install]
+WantedBy=suspend.target

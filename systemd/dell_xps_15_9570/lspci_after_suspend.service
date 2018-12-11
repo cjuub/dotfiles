@@ -1,0 +1,10 @@
+
+[Unit]
+Description="Fix issue after suspend"
+After=suspend.target
+
+[Service]
+ExecStart=lspci
+
+[Install]
+WantedBy=suspend.target
