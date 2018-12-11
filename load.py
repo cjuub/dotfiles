@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import os
-import shutil
 
 from argparse import ArgumentParser
 from pathlib import Path
@@ -44,6 +43,7 @@ def copy_dotfiles(dotfiles: Dict[Path, str]):
         home_path = Path(os.environ['HOME'])
         dst = home_path / file
         dst.parent.mkdir(parents=True, exist_ok=True)
+        content = '#### /!\\ THIS FILE IS GENERATED /!\\ ####\n\n\n' + content
         dst.write_text(content)
         print(str(file) + ' --> ' + str(dst))
 
