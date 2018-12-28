@@ -2,8 +2,9 @@
 Description=i8kmon
 
 [Service]
-ExecStartPre=/opt/dell-bios-fan-control 0  # uncomment to disable BIOS fan control
-ExecStopPost=/opt/dell-bios-fan-control 1  # ... and re-enable it afterwards
+ExecStartPre=/opt/dell-bios-fan-control 0
+ExecStopPost=/opt/dell-bios-fan-control 1
+ExecStart=/usr/bin/i8kmon
 Restart=always
 RestartSec=5
 
