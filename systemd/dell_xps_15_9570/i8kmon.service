@@ -1,0 +1,11 @@
+[Unit]
+Description=i8kmon
+
+[Service]
+ExecStartPre=/opt/dell-bios-fan-control 0  # uncomment to disable BIOS fan control
+ExecStopPost=/opt/dell-bios-fan-control 1  # ... and re-enable it afterwards
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
