@@ -8,15 +8,19 @@
 
 general {
         colors = true
-        interval = 10
+        interval = 1
+        color_good = "#10E010"
 }
 
 #order += "ipv6"
+order += "volume master"
 order += "disk /"
 order += "wireless _first_"
 order += "ethernet _first_"
 #order += "battery all"
 order += "battery percentage"
+#order += "cpu_usage"
+#order += "cpu_temperature"
 order += "load"
 order += "tztime local"
 
@@ -52,3 +56,6 @@ disk "/" {
         format = "%avail"
 }
 
+volume master {
+        format = "♪ %volume"
+}
