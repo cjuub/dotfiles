@@ -1,2 +1,3 @@
 .idea
 dotfiles_deployment.egg-info
+dotfiles_deployment/src/__pycache__
