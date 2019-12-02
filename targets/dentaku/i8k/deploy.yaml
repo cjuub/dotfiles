@@ -1,0 +1,4 @@
+deploy:
+  - {src: configs/i8kmon.conf, dst: /etc/i8kutils/i8kmon.conf}
+  - {src: scripts/dell-bios-fan-control, dst: /opt/dell-bios-fan-control}
+  - {src: services/i8kmon.service, dst: /etc/systemd/system/i8kmon.service}

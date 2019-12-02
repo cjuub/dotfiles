@@ -1,0 +1,2 @@
+deploy:
+  - {src: configs/bindings, dst: /home/cjuub/.config/ncmpcpp/bindings}

@@ -1,0 +1,3 @@
+deploy:
+  - {src: configs/colors/carbo.vim, dst: /home/cjuub/.config/nvim/colors/carbo.vim}
+  - {src: configs/init.vim, dst: /home/cjuub/.config/nvim/init.vim}

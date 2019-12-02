@@ -1,0 +1,2 @@
+deploy:
+  - {src: configs/compton.conf, dst: /home/cjuub/.config/compton.conf}

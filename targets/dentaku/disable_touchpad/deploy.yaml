@@ -1,0 +1,2 @@
+deploy:
+  - {src: services/disable_touchpad.service, dst: /etc/systemd/system/disable_touchpad.service}

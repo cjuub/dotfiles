@@ -1,0 +1,6 @@
+deploy:
+  - {src: configs/.bash_profile, dst: /home/cjuub/.bash_profile}
+  - {src: configs/.bashrc, dst: /home/cjuub/.bashrc}
+
+dependencies:
+  - environment

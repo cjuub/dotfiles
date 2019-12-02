@@ -1,0 +1,27 @@
+# increase volume
+"amixer -q sset Master 2%+"
+    XF86AudioRaiseVolume
+
+# decrease volume
+"amixer -q sset Master 2%-"
+    XF86AudioLowerVolume
+
+# mute audio
+"amixer sset Master toggle"
+    XF86AudioMute
+
+# toggle music play/pause
+"mpc -q toggle"
+    XF86Calculator
+
+# increase backlight
+"xbacklight -inc 2"
+   XF86MonBrightnessUp
+
+# decrease backlight
+"xbacklight -dec 2"
+   XF86MonBrightnessDown
+
+# toggle touchpad
+"sudo /home/cjuub/.toggle_touchpad.sh"
+   XF86Search

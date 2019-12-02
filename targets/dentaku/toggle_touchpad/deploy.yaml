@@ -1,0 +1,2 @@
+deploy:
+  - {src: scripts/.toggle_touchpad.sh, dst: /home/cjuub/.toggle_touchpad.sh}

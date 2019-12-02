@@ -1,0 +1,16 @@
+dentaku:
+  - compton
+  - disable_nvidia
+  - disable_touchpad
+  - environment
+  - i3
+  - i8k
+  - lspci_after_suspend
+  - mount_saba
+  - nvim
+  - ranger
+  - rsnapshot
+  - switch_screen
+  - toggle_touchpad
+  - x
+  - zsh

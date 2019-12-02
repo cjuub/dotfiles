@@ -1,0 +1,4 @@
+deploy:
+  - {src: configs/rsnapshot.conf, dst: /etc/rsnapshot.conf}
+  - {src: services/rsnapshot@.service, dst: /etc/systemd/system/rsnapshot@.service}
+  - {src: services/rsnapshot-daily.timer, dst: /etc/systemd/system/rsnapshot-daily.timer}

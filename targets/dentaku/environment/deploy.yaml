@@ -1,0 +1,2 @@
+deploy:
+  - {src: scripts/.env, dst: /home/cjuub/.env}

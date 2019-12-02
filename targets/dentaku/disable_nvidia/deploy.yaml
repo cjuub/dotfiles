@@ -1,0 +1,3 @@
+deploy:
+  - {src: scripts/.disable_nvidia.sh, dst: /home/cjuub/.disable_nvidia.sh}
+  - {src: services/disable_nvidia.service, dst: /etc/systemd/system/disable_nvidia.service}

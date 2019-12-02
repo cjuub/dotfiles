@@ -1,0 +1,2 @@
+deploy:
+  - {src: scripts/keepass_sync.sh, dst: /home/cjuub/.keepass_sync.sh}

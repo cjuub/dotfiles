@@ -1,0 +1,2 @@
+deploy:
+  - {src: configs/rc.conf, dst: /home/cjuub/.config/ranger/rc.conf}

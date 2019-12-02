@@ -1,0 +1,2 @@
+deploy:
+  - {src: services/lspci_after_suspend.service, dst: /etc/systemd/system/lspci_after_suspend.service}
