@@ -37,6 +37,7 @@ def main():
             src = base_path / 'targets' / target / deployment / entry['src']
             dst = entry['dst']
 
+            os.makedirs(Path(dst).parent, exist_ok=True)
             copy2(src, dst)
             print(str(src) + ' -> ' + str(dst))
 

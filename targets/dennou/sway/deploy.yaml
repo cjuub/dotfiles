@@ -1,0 +1,7 @@
+deploy:
+  - {src: configs/sway/config, dst: /home/cjuub/.config/sway/config}
+depends:
+  - pacman:
+      - dmenu
+      - rxvt-unicode
+      - sway

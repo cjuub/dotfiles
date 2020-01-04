@@ -14,3 +14,11 @@ dentaku:
   - toggle_touchpad
   - x
   - zsh
+
+dennou:
+  - environment
+  - nvim
+  - ranger
+  - sway
+  - x
+  - zsh

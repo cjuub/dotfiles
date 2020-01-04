@@ -1,0 +1,11 @@
+deploy:
+  - {src: configs/.zprofile, dst: /home/cjuub/.zprofile}
+  - {src: configs/.zshenv, dst: /home/cjuub/.zshenv}
+  - {src: configs/.zshrc, dst: /home/cjuub/.zshrc}
+depends:
+  - pacman:
+      - sway
+      - zsh
+      - zsh-syntax-highlighting
+  - aur:
+      - oh-my-zsh-git

@@ -1,0 +1,5 @@
+deploy:
+  - {src: configs/.Xresources, dst: /home/cjuub/.Xresources}
+depends:
+  - pacman:
+      - rxvt-unicode

@@ -1,0 +1,43 @@
+URxvt.font: xft:Hack:size=12
+URxvt.scrollBar: false
+
+active-opacity = 0.7
+*foreground: #D7D0C7
+*background: #292929
+
+!!black
+*color0: #292929
+*color8: #404040
+!
+!!green
+*color2: #B8D68C
+*color10: #A0CF5D
+!
+!! red dark/light
+*color1: #CC0000
+*color9: #EF2929
+
+!! yellow dark/light
+*color3 : #c4a000
+*color11: #FCE94F
+
+!! blue dark/light
+*color4 : #3465A4
+*color12: #729FCF
+
+!! magenta dark/light
+*color5 : #75507B
+*color13: #AD7FA8
+
+!! cyan dark/light
+*color6 : #06989A
+*color14: #34E2E2
+
+!! white dark/light
+*color7 : #D3D7CF
+*color15: #eeeeec
+
+URxvt.borderColor: #292929
+URxvt.colorBD: #ffffff
+URxvt.cursorColor: #ff8939
+URxvt.cursorColor2: #151515

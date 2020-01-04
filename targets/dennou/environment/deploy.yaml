@@ -1,0 +1,6 @@
+deploy:
+  - {src: scripts/.env, dst: /home/cjuub/.env}
+depends:
+  - pacman:
+      - nvim
+      - rxvt-unicode
