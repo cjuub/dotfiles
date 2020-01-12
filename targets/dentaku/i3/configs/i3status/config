@@ -8,7 +8,7 @@
 
 general {
         colors = true
-        interval = 1
+        interval = 10
         color_good = "#10E010"
 }
 
