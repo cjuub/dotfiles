@@ -47,9 +47,6 @@ redshift-gtk -l 59.262038:15.241937 &
 # enable keybindings
 xbindkeys
 
-# start screencloud screenshot tool
-screencloud &
-
 # disable dpms/energy/screensaver settings
 xset -dpms
 xset s off
