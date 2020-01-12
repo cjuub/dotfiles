@@ -10,9 +10,9 @@ else
   sudo modprobe hid_multitouch
   sleep 1
   # touchpad tap click enable
-  xinput set-prop 12 280 1
+  xinput set-prop 13 297 1
   # touchpad speed
-  xinput set-prop 12 300 0.5
+  xinput set-prop 13 288 0.5
   # touchpad natural scroll enable
-  xinput set-prop 12 288 1
+  xinput set-prop 13 281 1
 fi

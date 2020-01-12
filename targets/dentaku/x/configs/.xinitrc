@@ -57,8 +57,6 @@ xset s off
 # set us international with caps as super keymap
 setxkbmap us -variant altgr-intl -option caps:super
 
-~/.switch_screen.sh 0 &
-
 # disable touchpad
 sudo ~/.toggle_touchpad.sh
 

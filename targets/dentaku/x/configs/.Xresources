@@ -1,4 +1,4 @@
-Xft.dpi: 92
+Xft.dpi: 192
 
 URxvt.font: xft:Hack:size=12
 URxvt.scrollBar: false
