@@ -1,3 +1,3 @@
 deploy:
-  - {src: configs/i3/config, dst: /home/cjuub/.config/i3/config}
-  - {src: configs/i3status/config, dst: /home/cjuub/.config/i3status/config}
+  - {src: configs/i3/config, dst: ~/.config/i3/config}
+  - {src: configs/i3status/config, dst: ~/.config/i3status/config}

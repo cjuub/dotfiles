@@ -1,2 +1,2 @@
 deploy:
-  - {src: configs/mpd.conf, dst: /home/cjuub/.config/mpd/mpd.conf}
+  - {src: configs/mpd.conf, dst: ~/.config/mpd/mpd.conf}

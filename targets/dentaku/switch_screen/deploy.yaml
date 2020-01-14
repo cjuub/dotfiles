@@ -1,2 +1,2 @@
 deploy:
-  - {src: scripts/.switch_screen.sh, dst: /home/cjuub/.switch_screen.sh}
+  - {src: scripts/.switch_screen.sh, dst: ~/.switch_screen.sh}

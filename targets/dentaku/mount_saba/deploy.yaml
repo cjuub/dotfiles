@@ -1,2 +1,2 @@
 deploy:
-  - {src: scripts/.mount_saba.sh, dst: /home/cjuub/.mount_saba.sh}
+  - {src: scripts/.mount_saba.sh, dst: ~/.mount_saba.sh}

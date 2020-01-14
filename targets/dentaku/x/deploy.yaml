@@ -1,4 +1,4 @@
 deploy:
-  - {src: configs/.xbindkeysrc, dst: /home/cjuub/.xbindkeysrc}
-  - {src: configs/.xinitrc, dst: /home/cjuub/.xinitrc}
-  - {src: configs/.Xresources, dst: /home/cjuub/.Xresources}
+  - {src: configs/.xbindkeysrc, dst: ~/.xbindkeysrc}
+  - {src: configs/.xinitrc, dst: ~/.xinitrc}
+  - {src: configs/.Xresources, dst: ~/.Xresources}

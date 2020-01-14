@@ -1,7 +1,7 @@
 deploy:
-  - {src: configs/.zprofile, dst: /home/cjuub/.zprofile}
-  - {src: configs/.zshenv, dst: /home/cjuub/.zshenv}
-  - {src: configs/.zshrc, dst: /home/cjuub/.zshrc}
+  - {src: configs/.zprofile, dst: ~/.zprofile}
+  - {src: configs/.zshenv, dst: ~/.zshenv}
+  - {src: configs/.zshrc, dst: ~/.zshrc}
 depends:
   - pacman:
       - sway

@@ -29,8 +29,8 @@ def main():
             deployment_data = yaml.safe_load(fp)
 
         for entry in deployment_data['deploy']:
-            src = base_path / 'targets' / target / deployment / entry['src']
-            dst = Path(entry['dst'])
+            src = (base_path / 'targets' / target / deployment / entry['src']).expanduser()
+            dst = Path(entry['dst']).expanduser()
 
             os.makedirs(Path(dst).parent, exist_ok=True)
             copy_cmd = ['cp', str(src), str(dst)]

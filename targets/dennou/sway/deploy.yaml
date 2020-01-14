@@ -1,5 +1,5 @@
 deploy:
-  - {src: configs/sway/config, dst: /home/cjuub/.config/sway/config}
+  - {src: configs/sway/config, dst: ~/.config/sway/config}
 depends:
   - pacman:
       - dmenu
