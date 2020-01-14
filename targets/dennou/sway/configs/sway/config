@@ -235,3 +235,4 @@ input 1241:345:USB-HID_Keyboard {
 output "*" bg ~/.bg fill
 
 exec xrdb -load ~/.Xresources
+exec keepassxc &
