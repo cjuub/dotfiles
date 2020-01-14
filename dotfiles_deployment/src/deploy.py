@@ -1,18 +1,13 @@
 import os
+import pwd
 import subprocess
-import sys
+import yaml
+
 from argparse import ArgumentParser
 from pathlib import Path
-from shutil import copy2
-
-import yaml
 
 
 def main():
-    if not os.getuid() == 0:
-        subprocess.check_call(['sudo', sys.executable] + sys.argv)
-        return
-
     parser = ArgumentParser()
     parser.add_argument('target', help='The target machine to deploy files for', type=str)
     args = parser.parse_args()
@@ -35,10 +30,16 @@ def main():
 
         for entry in deployment_data['deploy']:
             src = base_path / 'targets' / target / deployment / entry['src']
-            dst = entry['dst']
+            dst = Path(entry['dst'])
 
             os.makedirs(Path(dst).parent, exist_ok=True)
-            copy2(src, dst)
+            copy_cmd = ['cp', str(src), str(dst)]
+            user_home_path = str(pwd.getpwuid(os.getuid()).pw_dir)
+            if not str(dst).startswith(user_home_path):
+                subprocess.call(['sudo'] + copy_cmd)
+            else:
+                subprocess.call(copy_cmd)
+
             print(str(src) + ' -> ' + str(dst))
 
 
