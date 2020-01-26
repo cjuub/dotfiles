@@ -234,5 +234,7 @@ input 1241:345:USB-HID_Keyboard {
 
 output "*" bg ~/.bg fill
 
+bindsym $mod+Alt+Q exec grim -g "$(slurp)" - | wl-copy -o
+
 exec xrdb -load ~/.Xresources
 exec keepassxc &

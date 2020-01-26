@@ -5,3 +5,5 @@ depends:
       - dmenu
       - rxvt-unicode
       - sway
+      - slurp
+      - wl-clipboard
