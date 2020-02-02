@@ -22,7 +22,6 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
 # Example configuration:
 #
@@ -233,6 +232,7 @@ input 1241:345:USB-HID_Keyboard {
 }
 
 output "*" bg ~/.bg fill
+output DP-1 res 5120x1440
 
 bindsym $mod+Alt+Q exec grim -g "$(slurp)" - | wl-copy -o
 
