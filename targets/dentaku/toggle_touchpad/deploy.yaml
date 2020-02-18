@@ -1,2 +1,2 @@
 deploy:
-  - {src: scripts/.toggle_touchpad.sh, dst: ~/.toggle_touchpad.sh}
+  - {src: scripts/.toggle_touchpad.py, dst: ~/.toggle_touchpad.py}

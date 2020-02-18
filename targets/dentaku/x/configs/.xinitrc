@@ -54,7 +54,6 @@ xset s off
 # set us international with caps as super keymap
 setxkbmap us -variant altgr-intl -option caps:super
 
-# disable touchpad
-sudo ~/.toggle_touchpad.sh
+~/.toggle_touchpad.py on
 
 exec i3
