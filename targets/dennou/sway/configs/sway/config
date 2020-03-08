@@ -236,5 +236,10 @@ output DP-1 res 5120x1440
 
 bindsym $mod+Alt+Q exec grim -g "$(slurp)" - | wl-copy -o
 
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume alsa_output.pci-0000_0d_00.4.analog-stereo +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume alsa_output.pci-0000_0d_00.4.analog-stereo -5%
+bindsym XF86AudioMute exec pactl set-sink-mute alsa_output.pci-0000_0d_00.4.analog-stereo toggle
+#bindsym XF86Calculator exec TODO
+
 exec xrdb -load ~/.Xresources
 exec keepassxc &
