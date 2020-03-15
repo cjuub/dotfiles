@@ -1,0 +1,7 @@
+deploy:
+  - {src: configs/keepass.prf, dst: ~/.unison/keepass.prf}
+  - {src: configs/saba.prf, dst: ~/.unison/saba.prf}
+  - {src: services/keepass_sync.service, dst: /etc/systemd/system/keepass_sync.service}
+depends:
+  - pacman:
+      - unison

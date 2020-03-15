@@ -1,0 +1,11 @@
+# Unison preferences
+auto = true
+root = /home/cjuub/documents/private/
+root = ssh://phil.rip//home/cjuub/
+sshargs = -p 40000
+batch = true
+
+path = keepass
+
+repeat = watch
+

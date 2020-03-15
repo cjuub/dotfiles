@@ -1,0 +1,17 @@
+# Unison preferences
+auto = true
+root = /home/cjuub/
+root = ssh://phil.rip//home/cjuub/ssd/unison
+sshargs = -p 40000
+batch = true
+
+path = development
+path = documents
+path = downloads
+path = devices
+path = pictures
+
+ignore=Name .git
+ignore=Name .idea
+ignore=Name cmake-build-*
+ignore=Name __pycache__

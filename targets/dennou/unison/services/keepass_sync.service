@@ -1,0 +1,11 @@
+[Unit]
+Description=unison keepass sync
+
+[Service]
+ExecStart=/usr/bin/unison keepass
+Restart=always
+RestartSec=5
+User=cjuub
+
+[Install]
+WantedBy=multi-user.target

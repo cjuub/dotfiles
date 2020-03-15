@@ -20,5 +20,6 @@ dennou:
   - nvim
   - ranger
   - sway
+  - unison
   - x
   - zsh
