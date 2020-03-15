@@ -12,6 +12,7 @@ dentaku:
   - rsnapshot
   - switch_screen
   - toggle_touchpad
+  - unison
   - x
   - zsh
 
