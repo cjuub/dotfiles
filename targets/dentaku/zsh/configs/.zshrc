@@ -26,3 +26,6 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+bindkey "^[Od" backward-word
+bindkey "^[Oc" forward-word
+
