@@ -178,10 +178,10 @@ mode "resize" {
     # right will grow the containers width
     # up will shrink the containers height
     # down will grow the containers height
-    bindsym $left resize shrink width 10px
-    bindsym $down resize grow height 10px
-    bindsym $up resize shrink height 10px
-    bindsym $right resize grow width 10px
+    bindsym $left resize shrink width 100px
+    bindsym $down resize grow height 100px
+    bindsym $up resize shrink height 100px
+    bindsym $right resize grow width 100px
 
     # Ditto, with arrow keys
     bindsym Left resize shrink width 10px
@@ -237,10 +237,10 @@ output DP-1 res 5120x1440
 
 bindsym $mod+Alt+Z exec grim -g "$(slurp)" - | wl-copy -o
 
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume alsa_output.pci-0000_0d_00.4.analog-stereo +5%
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume alsa_output.pci-0000_0d_00.4.analog-stereo -5%
-bindsym XF86AudioMute exec pactl set-sink-mute alsa_output.pci-0000_0d_00.4.analog-stereo toggle
-#bindsym XF86Calculator exec TODO
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume bluez_output.4C_87_5D_9F_33_B3.a2dp-sink +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume bluez_output.4C_87_5D_9F_33_B3.a2dp-sink -5%
+bindsym XF86AudioMute exec pactl set-sink-mute bluez_output.4C_87_5D_9F_33_B3.a2dp-sink toggle
+bindsym XF86Calculator exec playerctl play-pause
 
 exec xrdb -load ~/.Xresources
 exec keepassxc &
