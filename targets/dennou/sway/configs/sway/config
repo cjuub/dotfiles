@@ -200,6 +200,7 @@ bindsym $mod+r mode "resize"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
+    swaybar_command waybar
     position bottom
 
     # When the status_command prints a new line to stdout, swaybar updates.
@@ -234,7 +235,7 @@ input 1241:345:USB-HID_Keyboard {
 output "*" bg ~/.bg fill
 output DP-1 res 5120x1440
 
-bindsym $mod+Alt+Q exec grim -g "$(slurp)" - | wl-copy -o
+bindsym $mod+Alt+Z exec grim -g "$(slurp)" - | wl-copy -o
 
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume alsa_output.pci-0000_0d_00.4.analog-stereo +5%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume alsa_output.pci-0000_0d_00.4.analog-stereo -5%

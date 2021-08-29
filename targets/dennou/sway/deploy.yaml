@@ -1,5 +1,7 @@
 deploy:
   - {src: configs/sway/config, dst: ~/.config/sway/config}
+  - {src: configs/waybar/config, dst: ~/.config/waybar/config}
+  - {src: configs/waybar/style.css, dst: ~/.config/waybar/style.css}
 depends:
   - pacman:
       - dmenu
@@ -7,3 +9,4 @@ depends:
       - sway
       - slurp
       - wl-clipboard
+      - waybar
