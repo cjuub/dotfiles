@@ -242,5 +242,8 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume bluez_output.4C_87_5D_9F
 bindsym XF86AudioMute exec pactl set-sink-mute bluez_output.4C_87_5D_9F_33_B3.a2dp-sink toggle
 bindsym XF86Calculator exec playerctl play-pause
 
+exec 'sleep 1; blueman-applet'
+exec 'sleep 1; radeon-profile'
+exec 'sleep 1; keepassxc'
+#exec 'sleep 1; noisetorch -i alsa_input.usb-RODE_Microphones_RODE_NT-USB-00.analog-stereo'
 exec xrdb -load ~/.Xresources
-exec keepassxc &
