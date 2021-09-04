@@ -235,6 +235,8 @@ input 1241:345:USB-HID_Keyboard {
 output "*" bg ~/.bg fill
 output DP-1 res 5120x1440
 
+input * xkb_numlock enable
+
 bindsym $mod+Alt+Z exec grim -g "$(slurp)" - | wl-copy -o
 
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume bluez_output.4C_87_5D_9F_33_B3.a2dp-sink +5%
