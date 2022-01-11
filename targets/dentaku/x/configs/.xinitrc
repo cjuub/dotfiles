@@ -52,7 +52,7 @@ xset -dpms
 xset s off
 
 # set us international with caps as super keymap
-setxkbmap us -variant altgr-intl -option caps:super
+setxkbmap us -variant altgr-intl -option ctrl:nocaps
 
 ~/.toggle_touchpad.py on
 
